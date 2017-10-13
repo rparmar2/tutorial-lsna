@@ -1,14 +1,8 @@
 /**
- * WeDeploy Endpoints
- */
-
-var auth = WeDeploy.auth('auth-mychatapp.wedeploy.io');
-
-/**
  * Redirect (if current user exists)
  */
 
-if (auth.currentUser) {document.location.href = './chat.html';}
+if (currentUser) {document.location.href = './chat.html';}
 
 
 /**
@@ -17,6 +11,7 @@ if (auth.currentUser) {document.location.href = './chat.html';}
 
 var login = document.querySelector('.login');
 
+// Paste Sign In code below //
 function signIn() {
 	auth.signInWithEmailAndPassword(login.email.value, login.password.value)
 		.then(function() {
@@ -30,3 +25,4 @@ function signIn() {
 			alert('Sign-in failed.');
 		});
 }
+// Paste Sign In code above //
