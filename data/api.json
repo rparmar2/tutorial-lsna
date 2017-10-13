@@ -1,0 +1,9 @@
+[
+	{
+		"path": "/messages/*",
+		"data": true,
+		"auth": {
+			"validator": "$auth != null"
+		}
+	}
+]

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account - MyChat</title>
+
+  <meta name="theme-color" content="#054d44">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1">
+
+  <link rel="manifest" href="../manifest.json">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,600">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="../assets/styles/vendor/devices.min.css">
+  <link rel="stylesheet" href="../assets/styles/auth.css">
+  <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+<body>
+  <div class="page">
+<div class="marvel-device nexus5">
+      <div class="top-bar"></div>
+      <div class="sleep"></div>
+      <div class="volume"></div>
+      <div class="camera"></div>
+      <div class="screen">
+        <div class="screen-container">
+          <div class="status-bar">
+            <div class="time"></div>
+            <div class="battery">
+              <i class="zmdi zmdi-battery"></i>
+            </div>
+            <div class="network">
+              <i class="zmdi zmdi-network"></i>
+            </div>
+            <div class="wifi">
+              <i class="zmdi zmdi-wifi-alt-2"></i>
+            </div>
+            <div class="star">
+              <i class="zmdi zmdi-star"></i>
+            </div>
+          </div>
+          <div class="app">
+            <div class="auth-container">
+              <p class="title">MyChat</p>
+              <form class="create" onsubmit="userCreate(); return false;">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <button class="submit-btn" type="submit" name="submit">Create Account</button>
+              </form>
+              <a href="../index.html">Sign In</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+  <script src="https://cdn.wedeploy.com/api/4.0.1/wedeploy.js"></script>
+
+  <script src="../assets/scripts/time.js"></script>
+  <script src="../assets/scripts/create.js"></script>
+</body>
+</html>
