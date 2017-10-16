@@ -2,7 +2,9 @@
  * Redirect (if no current user)
  */
 
-if (currentUser == null) {document.location.href = './index.html';}
+// Paste Redirect code below //
+
+// Paste Redirect code above //
 
 /**
  * Sign Out
@@ -31,39 +33,9 @@ function onresize() {
  * Get Old Messages
  */
 
-WeDeploy
-	.data(data_endpoint)
-	.auth(currentUser)
-	.orderBy('id', 'asc')
-	.limit(100)
-	.get('messages')
-	.then(function(result) {
+// Paste Get Old Messages code below //
 
-		var messages = result;
-		for (var i = 0; i < messages.length; i++) {
-			appendMessage(messages[i]);
-		}
-	});
-
-/**
- * Watch New Messages
- */
-
-WeDeploy
-	.data(data_endpoint)
-	.auth(currentUser)
-	.orderBy('id', 'desc')
-	.limit(1)
-	.watch('messages')
-	.on('changes', function(result) {
-		var data = result.pop();
-		var element = document.getElementById(data.id);
-		if (element) {
-			animateMessage(element);
-		} else {
-			appendMessage(data);
-		}
-	});
+// Paste Get Old Messages code above //
 
 /**
  * New Message
@@ -88,15 +60,9 @@ function newMessage(e) {
 			time: moment().format('h:mm A')
 		};
 
-		WeDeploy
-			.data(data_endpoint)
-			.auth(currentUser)
-			.create('messages', data)
-			.then(function(response) {
-				input.value = '';
-				conversation.scrollTop = conversation.scrollHeight;
-				appendMessage(data);
-			});
+// Paste Save New Message code below //
+
+// Paste Save New Message code above //
 	}
 
 	e.preventDefault();
@@ -133,3 +99,11 @@ function animateMessage(message) {
 	var tick = message.querySelector('.tick');
 	tick.classList.remove('tick-animation');
 }
+
+/**
+ * Watch New Messages
+ */
+
+// Paste Watch New Messages code below //
+
+// Paste Watch New Messages code above //

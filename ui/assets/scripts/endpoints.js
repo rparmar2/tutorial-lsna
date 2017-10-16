@@ -2,12 +2,15 @@
  * Auth Endpoints
  */
 
-const auth = WeDeploy.auth('auth-mychatapp.wedeploy.io');
-const currentUser = WeDeploy.auth('auth-mychatapp.wedeploy.io').currentUser;
+// Paste Auth Endpoints code below //
+
+// Paste Auth Endpoints code above //
+
 
 /**
  * Data Endpoints
  */
 
-const data = WeDeploy.data('data-mychatapp.wedeploy.io');
-const data_endpoint = 'data-mychatapp.wedeploy.io';
+// Paste Data Endpoints code below //
+
+// Paste Data Endpoints code above //

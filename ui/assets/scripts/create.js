@@ -11,29 +11,6 @@ if (currentUser) {document.location.href = './chat.html';}
 
 var create = document.querySelector('.create');
 
-function userCreate() {
-	auth.createUser({
-		name: create.name.value,
-		email: create.email.value,
-		password: create.password.value,
-		color: 'color-' + Math.floor(Math.random() * 19)
-	})
-	.then(function() {
-		create.submit.disabled = true;
-		create.submit.innerText = 'Loading...';
+// Paste Create User code below //
 
-		auth
-			.signInWithEmailAndPassword(create.email.value, create.password.value)
-			.then(function() {
-				document.location.href = './chat.html';
-			})
-			.catch(function() {
-				alert('Sign-in failed.');
-			});
-	})
-	.catch(function() {
-		create.submit.disabled = false;
-		create.submit.innerText = 'Create Account';
-		alert('Sign-up failed.');
-	})
-};
+// Paste Create User code above //
