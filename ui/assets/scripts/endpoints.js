@@ -4,7 +4,7 @@
 
 const address = {
 // Paste Auth Endpoint below //
-	"auth": "auth-yourproject.wedeploy.io",
+	"auth": "auth-rparmarchat.wedeploy.io",
 // Paste Auth Endpoint above //
 // Paste Data Endpoint above //
 	"data": ""
