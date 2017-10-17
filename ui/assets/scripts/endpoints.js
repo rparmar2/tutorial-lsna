@@ -1,16 +1,12 @@
 /**
- * Auth Endpoints
+ * Endpoints
  */
 
-// Paste Auth Endpoints code below //
-
-// Paste Auth Endpoints code above //
-
-
-/**
- * Data Endpoints
- */
-
-// Paste Data Endpoints code below //
-
-// Paste Data Endpoints code above //
+const address = {
+// Paste Auth Endpoint below //
+	"auth": "",
+// Paste Auth Endpoint above //
+// Paste Data Endpoint above //
+	"data": ""
+// Paste Data Endpoint above //
+}

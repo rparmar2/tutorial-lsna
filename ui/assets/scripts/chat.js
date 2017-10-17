@@ -11,7 +11,8 @@
  */
 
 function signOut() {
-  auth
+  WeDeploy
+  	.auth(address.auth)
     .signOut()
     .then(() => {
       document.location.href = './index.html';
@@ -46,6 +47,7 @@ var conversation = document.querySelector('.conversation-container');
 document.querySelector('.conversation-compose').addEventListener('submit', newMessage);
 
 function newMessage(e) {
+	var currentUser = WeDeploy.auth(address.auth).currentUser;
 	var input = e.target.input;
 
 	if (input.value) {
@@ -76,6 +78,7 @@ function appendMessage(data) {
 }
 
 function buildMessage(data) {
+	var currentUser = WeDeploy.auth(address.auth).currentUser;
 	var color = (data.author.id !== currentUser.id) ? data.author.color : '';
 	var sender = (data.author.id !== currentUser.id) ? 'received' : 'sent';
 

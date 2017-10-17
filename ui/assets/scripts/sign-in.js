@@ -2,7 +2,7 @@
  * Redirect (if current user exists)
  */
 
-if (currentUser) {document.location.href = './chat.html';}
+if (WeDeploy.auth(address.auth).currentUser) {document.location.href = './chat.html';}
 
 
 /**
